@@ -1,0 +1,6 @@
+Data Peserta Bootcamp Digital Skill - Golang Backend Development
+1. Nama: Aditya Fitriadi
+2. Email: aditya.fitriadi99@gmail.com
+3. Sistem Operasi yang digunakan: Windows 10
+4. Akun Gitlab/Github: featriadi
+5. Akun Telegram: featriadi
