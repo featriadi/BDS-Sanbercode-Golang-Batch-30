@@ -19,10 +19,17 @@ func Auth(next http.Handler) http.Handler {
 			return
 		}
 
-		if uname == "admin" && pwd == "admin" {
+		if uname == "admin" && pwd == "password" {
+			next.ServeHTTP(w, r)
+			return
+		} else if uname == "editor" && pwd == "secret" {
+			next.ServeHTTP(w, r)
+			return
+		} else if uname == "trainer" && pwd == "rahasia" {
 			next.ServeHTTP(w, r)
 			return
 		}
+
 		w.Write([]byte("Username atau Password tidak sesuai"))
 		return
 	})
